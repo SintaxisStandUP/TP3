@@ -28,4 +28,14 @@ definir [Dd][Ee][Fi][Ii][Nn][Ii][Rr]
 {D}+{O}+	return ERROR_C;
 {L}+{O}+	return ERROR_I;
 {O}+		return ERROR_L;
+"+"			return OP_SUM;
+"-"			return OP_REST;
+"*"			return OP_MULT;
+"/"			return OP_DIV;
+":="		return ASIG;
+"("			return PAR_I;
+")"			return PAR_D;
+","			return COMA;
+"."			return PTO;
+"//".*\n    ;  
 %%
